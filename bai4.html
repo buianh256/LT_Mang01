@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 4</title>
+</head>
+<body>
+<script>
+  let arr = [];
+  let m = +prompt("Nhâp so phan tu");
+  for (let i = 0; i < m; i++) {
+    let n = +prompt("nhập sô ");
+    document.write(n + " ");
+    arr.push(n);
+  }
+  document.write("<br>");
+  let first = 0;
+  let last = arr.length-1;
+  while (first < last){
+    let a = arr[first];
+    arr[first] = arr[last];
+    arr[last] = a;
+    first++;
+    last--;
+  }
+  document.write(arr);
+</script>
+</body>
+</html>

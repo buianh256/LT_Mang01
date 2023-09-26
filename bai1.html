@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+      let n =+prompt("nhập sô ");
+        document.write(n);
+        arr.push(n);
+    }
+    document.write("<br>");
+    let sum = 0;
+    for (let j = 0; j < arr.length; j++) {
+        sum += arr[j];
+        if(arr[j] >= 10){
+            document.write(arr[j] + "<br>");
+        }
+    }
+    document.write(sum + "<br>");
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<body>
+<script>
+  let arr =[];
+  let m = +prompt("nhap phan tu");
+  for (let i = 0; i < m; i++) {
+    let n = +prompt("Nhap so");
+    document.write(n + " ");
+    arr.push(n);
+  }
+  document.write("<br>");
+  for (let j = 0; j < arr.length; j++) {
+    if(arr[j] < 0){
+      document.write("So nguyen am " + arr[j] + "<br>");
+    }
+  }
+</script>
+</body>
+</html>

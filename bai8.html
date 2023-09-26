@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 8</title>
+</head>
+<body>
+<script>
+    let arr =[];
+    let m = +prompt("nhap phan tu");
+    for (let i = 0; i < m; i++) {
+        let n = +prompt("Nhap so");
+        document.write(n + " ");
+        arr.push(n);
+    }
+    document.write("<br>");
+
+    for (let i = 0; i < arr.length -1; i++) {
+        for (let j = i + 1; j < arr.length ; j++) {
+            if(arr[i] < arr[j]){
+                let a = arr[i];
+                arr[i] = arr[j];
+                arr[j]= a;
+            }
+        }
+    }
+    document.write(arr);
+</script>
+</body>
+</html>

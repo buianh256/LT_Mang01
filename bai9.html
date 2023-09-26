@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 9</title>
+</head>
+<body>
+<script>
+  let a =[];
+  let m = +prompt("nhap phan tu mang a");
+  for (let i = 0; i < m; i++) {
+    let n = +prompt("Nhap so");
+    document.write(n + " ");
+    a.push(n);
+  }
+  document.write("<br>");
+
+  let b =[];
+  let k = +prompt("nhap phan tu mang b");
+  for (let i = 0; i < k; i++) {
+    let j = +prompt("Nhap so");
+    document.write(j + " ");
+    b.push(j);
+  }
+  document.write("<br>");
+
+  let c =[2,3,5,7,11,32,12,25,36,9,8,43,16,44,76,19,62,91,23,20];
+  let abc = c.concat(a,b);
+
+  document.write(abc);
+</script>
+</body>
+</html>

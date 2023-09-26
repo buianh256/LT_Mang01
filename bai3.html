@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let m = +prompt("Nhâp so phan tu");
+    for (let i = 0; i < m; i++) {
+        let n = +prompt("nhập sô ");
+        document.write(n + " ");
+        arr.push(n);
+    }
+    document.write("<br>");
+    let max = arr[0];
+    for (let j = 0; j < arr.length; j++) {
+        if(arr[j] > max){
+            max = arr[j];
+        }
+    }
+    document.write(max);
+    let sum = 0;
+    for (let k = 0; k < arr.length; k++) {
+        sum += arr[k];
+    }
+    document.write("<br>" + sum/m);
+</script>
+</body>
+</html>
